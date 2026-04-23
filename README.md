@@ -2,9 +2,34 @@
 
 A dark-themed Flask web app and Python cleaning engine for messy datasets and documents.
 
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
+[![Flask](https://img.shields.io/badge/Flask-3.x-black.svg)](https://flask.palletsprojects.com/)
+[![Deploy](https://img.shields.io/badge/Deploy-Render-46E3B7.svg)](https://render.com/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](#license)
+
 Mr.Cleaner supports both:
 - **Web UI workflow** (drag, clean, preview, download)
 - **CLI workflow** (scriptable cleaning for pipelines)
+
+---
+
+## Live Demo
+
+- **Production URL:** [https://mr-cleaner.onrender.com](https://mr-cleaner.onrender.com)
+- Note: On free Render tier, first request after inactivity may take ~30-60 seconds.
+
+---
+
+## Screenshots
+
+Add your screenshots in `docs/images/` and update these links:
+
+```md
+![Home](docs/images/home.png)
+![Cleaning Options](docs/images/cleaning-options.png)
+![Column-wise Rules](docs/images/column-wise-rules.png)
+![Preview and Results](docs/images/preview-results.png)
+```
 
 ---
 
@@ -35,7 +60,7 @@ Mr.Cleaner supports both:
 |- data_cleaner.py         # Core cleaning engine (structured + text pipelines)
 |- templates/
 |  `- index.html           # Full web UI (styles + behavior)
-`- requirements_web.txt    # Python dependencies
+`- requirements.txt        # Python dependencies
 ```
 
 ---
@@ -48,7 +73,7 @@ Mr.Cleaner supports both:
 Install dependencies:
 
 ```bash
-pip install -r requirements_web.txt
+pip install -r requirements.txt
 ```
 
 ---
@@ -69,13 +94,8 @@ Then open:
 
 This project is ready for free deployment on Render.
 
-### Option A: Use `render.yaml` (recommended)
-1. Push this repository to GitHub.
-2. In Render, create a new **Blueprint** and select this repo.
-3. Render will read `render.yaml` and deploy automatically.
-
-### Option B: Manual Web Service setup
-- **Build command:** `pip install -r requirements_web.txt`
+### Manual Web Service setup (Render)
+- **Build command:** `pip install -r requirements.txt`
 - **Start command:** `gunicorn app:app`
 
 ### Remove local copy after deployment (optional)
@@ -142,5 +162,5 @@ python data_cleaner.py apply --model model.json --input new_data.csv --output cl
 
 ## License
 
-Add your preferred license here (for example: MIT).
+MIT (recommended). Add a `LICENSE` file before finalizing your public release.
 

@@ -1,1 +1,24 @@
--r requirements_web.txt
+# Core web framework
+flask>=3.0.0
+gunicorn>=22.0.0
+
+# Data processing
+pandas>=2.0.0
+numpy>=1.24.0
+scipy>=1.10.0
+scikit-learn>=1.3.0
+
+# File format support
+openpyxl>=3.1.0          # .xlsx read/write
+xlrd>=2.0.1              # .xls read
+lxml>=4.9.0              # .xml support
+pyyaml>=6.0              # .yaml support
+
+# Text / NLP
+pdfplumber>=0.9.0        # .pdf text extraction
+striprtf>=0.0.22         # .rtf parsing
+nltk>=3.8.0              # stopword removal + lemmatization (optional)
+
+# Fuzzy matching
+thefuzz>=0.20.0
+python-Levenshtein>=0.21.0   # speedup for thefuzz
