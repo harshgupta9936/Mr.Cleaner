@@ -19,8 +19,8 @@ Mr.Cleaner supports both:
 ## Screenshots
 
 ```md
-![Home](screenshots/home.png.png)
-![Cleaning Options](screenshots/Cleaning_options.png.png)
+![Home](screenshots/home.png)
+![Cleaning Options](screenshots/Cleaning_options.png)
 ![Advanced and Column-wise Rules](screenshots/advanced_and_column_wise_rules.png)
 ![Preview and Results](screenshots/preview.png)
 ```
