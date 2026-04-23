@@ -2,10 +2,6 @@
 
 A dark-themed Flask web app and Python cleaning engine for messy datasets and documents.
 
-[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
-[![Flask](https://img.shields.io/badge/Flask-3.x-black.svg)](https://flask.palletsprojects.com/)
-[![Deploy](https://img.shields.io/badge/Deploy-Render-46E3B7.svg)](https://render.com/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](#license)
 
 Mr.Cleaner supports both:
 - **Web UI workflow** (drag, clean, preview, download)
@@ -22,13 +18,11 @@ Mr.Cleaner supports both:
 
 ## Screenshots
 
-Add your screenshots in `docs/images/` and update these links:
-
 ```md
-![Home](docs/images/home.png)
-![Cleaning Options](docs/images/cleaning-options.png)
-![Column-wise Rules](docs/images/column-wise-rules.png)
-![Preview and Results](docs/images/preview-results.png)
+![Home](screenshots/home.png.png)
+![Cleaning Options](screenshots/Cleaning_options.png.png)
+![Advanced and Column-wise Rules](screenshots/advanced_and_column_wise_rules.png)
+![Preview and Results](screenshots/preview.png)
 ```
 
 ---
@@ -157,10 +151,4 @@ python data_cleaner.py apply --model model.json --input new_data.csv --output cl
 - PDF cleaning is text-extraction based; scanned/image-only PDFs may not extract well.
 - Some optional NLP steps (stopwords, lemmatization) require NLTK resources.
 - XML output writing is not currently implemented directly; web flow converts XML outputs to CSV/JSON.
-
----
-
-## License
-
-MIT (recommended). Add a `LICENSE` file before finalizing your public release.
 
